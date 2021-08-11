@@ -82,4 +82,5 @@ stages:
       envGroup: '${{ variables.envGroupName }}'
       dockerImage: '${{ variables.containerRegistry }}.azurecr.io/${{ variables.repositoryName }}:$(Build.BuildId)'
       clusterName: '${{ variables.aksProdName }}'
+      appName: '${{ variables.fullAppName }}'
       replicas: 3
