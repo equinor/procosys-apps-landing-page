@@ -61,7 +61,7 @@ stages:
 # Deploy to Prod
 - stage: prod
   displayName: 'Deploy to Prod'
-  dependsOn: ''
+  dependsOn: 'build'
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   variables:
     envName: 'prod'
@@ -82,4 +82,5 @@ stages:
       envGroup: '${{ variables.envGroupName }}'
       dockerImage: '${{ variables.containerRegistry }}.azurecr.io/${{ variables.repositoryName }}:$(Build.BuildId)'
       clusterName: '${{ variables.aksProdName }}'
+      appName: '${{ variables.fullAppName }}'
       replicas: 3
