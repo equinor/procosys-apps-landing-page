@@ -35,14 +35,14 @@ function App() {
       <AppSection>
         <LogoImage src={mcLogo}/> 
         <Typography variant={'h4'}>Mechanical Completion</Typography>
-        <a href={'https://mc-webapp-prod.pcs-dev.net'}>
+        <a href={'https://apps.procosys.com/mc'}>
           <Button color={'danger'}>Go to app</Button>
         </a>
       </AppSection>
       <CommAppSection>
         <LogoImage src={commLogo}/> 
         <Typography variant={'h4'}>Commissioning</Typography>
-        <a href={'https://comm-webapp-prod.pcs-dev.net'}>
+        <a href={'https://apps.procosys.com/comm'}>
           <Button color={'danger'}>Go to app</Button>
         </a>
       </CommAppSection>
