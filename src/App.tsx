@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import mcLogo from './img/mclogo.png';
 import commLogo from './img/commlogo2.png';
 
-
 const LandingPageWrapper = styled.main`
   width: 100vw;
   & h4 {
@@ -28,7 +27,6 @@ const LogoImage = styled.img`
   width: 60px;
   object-fit: contain;
 `
-
 
 function App() {
   return (
