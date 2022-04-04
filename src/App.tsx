@@ -1,8 +1,9 @@
 import { Button, Typography } from '@equinor/eds-core-react';
 import React from 'react';
 import styled from 'styled-components';
-import mcLogo from './mclogo.png';
-import commLogo from './commlogo2.png';
+import mcLogo from './img/mclogo.png';
+import commLogo from './img/commlogo2.png';
+
 
 const LandingPageWrapper = styled.main`
   width: 100vw;
