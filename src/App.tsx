@@ -37,6 +37,7 @@ function App() {
         <a href={'https://apps.procosys.com/mc'}>
           <Button color={'danger'}>Go to app</Button>
         </a>
+        Tull og tøys
       </AppSection>
       <CommAppSection>
         <LogoImage src={commLogo}/> 
