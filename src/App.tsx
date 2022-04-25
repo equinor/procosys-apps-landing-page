@@ -1,5 +1,5 @@
-import { Button, Typography } from '@equinor/eds-core-react';
 import React from 'react';
+import { Button, Typography } from '@equinor/eds-core-react';
 import styled from 'styled-components';
 import mcLogo from './mclogo.png';
 import commLogo from './commlogo2.png';
@@ -27,7 +27,6 @@ const LogoImage = styled.img`
   width: 60px;
   object-fit: contain;
 `
-
 
 function App() {
   return (
