@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/helper-environment-visitor": "^7.18.9",
-    "@equinor/eds-core-react": "^0.29.1",
+    "@equinor/eds-core-react": "^0.30.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.1",
