@@ -5,10 +5,11 @@ import GlobalStyles from './GlobalStyles';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container as HTMLElement);
+const GlobalStylesProxy: any = GlobalStyles; // TODO: remove once @types/styled-components is updated to work with react 18
 
 root.render(
   <React.StrictMode>
-    <GlobalStyles />
+    <GlobalStylesProxy />
     <App />
   </React.StrictMode>
 );
