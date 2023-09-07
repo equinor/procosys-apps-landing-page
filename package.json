@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/helper-environment-visitor": "7.18.9",
+    "@babel/helper-environment-visitor": "7.22.5",
     "@equinor/eds-core-react": "0.30.0 ",
     "@testing-library/jest-dom": "5.16.5",
     "@types/jest": "29.5.4",
