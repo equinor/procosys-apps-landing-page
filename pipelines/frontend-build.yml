@@ -65,13 +65,6 @@ stages:
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/pbi/110010_Move_Apps_landing_page_to_Radix')) #TODO
   variables:
     envName: 'prod'
-    envLabel: 'prod'
-    envGroupName: '$(globalPrefix)-$(fullAppName)-${{ variables.envName }}'
-    serviceConnection: '${{ variables.prodServiceConnection }}'
-    containerRegistry: '${{ variables.containerRegistryName }}'
-
-variables:
-    envName: 'dev'
     envGroupName: '$(globalPrefix)-$(fullAppName)-${{ variables.envName }}'
 
   jobs:
