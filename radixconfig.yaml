@@ -9,7 +9,6 @@ spec:
       from: main
   components:
   - name: frontend
-    image: procosys.azurecr.io/procosys/apps-landing-page:{imageTagName}
     ports:
     - name: http
       port: 5000
@@ -23,8 +22,4 @@ spec:
           cpu: '100m'
         limits:
           memory: '256Mi'
-          cpu: '100m'      
-  privateImageHubs:
-    procosys.azurecr.io:
-      username: 9d3898e4-730f-4fb5-8ddf-a5de51537896
-
+          cpu: '100m'
