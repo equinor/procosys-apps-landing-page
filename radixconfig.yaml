@@ -5,7 +5,8 @@ metadata:
 spec: 
   environments:
   - name: prod
-
+    build:
+      from: main
   components:
   - name: frontend
     image: procosys.azurecr.io/procosys/apps-landing-page:{imageTagName}
