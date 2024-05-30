@@ -34,14 +34,14 @@ function App() {
       <AppSection>
         <LogoImage src={mcLogo}/> 
         <Typography variant={'h4'}>Mechanical Completion</Typography>
-        <a href={'https://apps.procosys.com/mc'}>
+        <a href={'https://frontend-procosys-mc-webapp-prod.radix.equinor.com'}>
           <Button color={'danger'}>Go to app</Button>
         </a>
       </AppSection>
       <CommAppSection>
         <LogoImage src={commLogo}/> 
         <Typography variant={'h4'}>Commissioning</Typography>
-        <a href={'https://apps.procosys.com/comm'}>
+        <a href={'https://frontend-procosys-commissioning-webapp-prod.radix.equinor.com'}>
           <Button color={'danger'}>Go to app</Button>
         </a>
       </CommAppSection>
