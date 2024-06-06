@@ -7,7 +7,7 @@ RUN yarn build --mode=production
 
 # production environment
 FROM docker.io/nginxinc/nginx-unprivileged:1.21.6-alpine
-user 0
+USER 0
 ## add permissions for nginx user
 RUN apk add python3
 WORKDIR /landingpage

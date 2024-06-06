@@ -27,21 +27,25 @@ const LogoImage = styled.img`
   width: 60px;
   object-fit: contain;
 `
-
+const getEnv = () => {
+  if(location.pathname.includes("dev"))return "dev"
+  if(location.pathname.includes("test"))return "test"
+  return "prod"
+}
 function App() {
   return (
     <LandingPageWrapper>
       <AppSection>
         <LogoImage src={mcLogo}/> 
         <Typography variant={'h4'}>Mechanical Completion</Typography>
-        <a href={'https://frontend-procosys-mc-webapp-prod.radix.equinor.com'}>
+        <a href={`https://frontend-procosys-mc-webapp-${getEnv()}.radix.equinor.com`}>
           <Button color={'danger'}>Go to app</Button>
         </a>
       </AppSection>
       <CommAppSection>
         <LogoImage src={commLogo}/> 
         <Typography variant={'h4'}>Commissioning</Typography>
-        <a href={'https://frontend-procosys-commissioning-webapp-prod.radix.equinor.com'}>
+        <a href={`https://frontend-procosys-commissioning-webapp-${getEnv()}.radix.equinor.com`}>
           <Button color={'danger'}>Go to app</Button>
         </a>
       </CommAppSection>
