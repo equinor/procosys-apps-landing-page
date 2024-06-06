@@ -4,6 +4,12 @@ metadata:
   name: procosys-apps-landing-page
 spec: 
   environments:
+  - name: dev
+    build:
+      from: develop
+  - name: test
+    build:
+      from: test
   - name: prod
     build:
       from: main
@@ -14,7 +20,6 @@ spec:
       port: 5000
     publicPort: http
     environmentConfig:
-    # Development environment
     - environment: prod
       resources:
         requests:
