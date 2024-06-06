@@ -30,8 +30,8 @@ const LogoImage = styled.img`
 
 function App() {
   const getEnv = () => {
-    if(window.location.pathname.includes("dev"))return "dev"
-    if(window.location.pathname.includes("test"))return "test"
+    if(window.location.hostname.includes("dev"))return "dev"
+    if(window.location.hostname.includes("test"))return "test"
     return "prod"
   }
   return (
