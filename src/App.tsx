@@ -27,12 +27,13 @@ const LogoImage = styled.img`
   width: 60px;
   object-fit: contain;
 `
-const getEnv = () => {
-  if(location.pathname.includes("dev"))return "dev"
-  if(location.pathname.includes("test"))return "test"
-  return "prod"
-}
+
 function App() {
+  const getEnv = () => {
+    if(window.location.pathname.includes("dev"))return "dev"
+    if(window.location.pathname.includes("test"))return "test"
+    return "prod"
+  }
   return (
     <LandingPageWrapper>
       <AppSection>
