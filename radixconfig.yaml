@@ -28,3 +28,8 @@ spec:
         limits:
           memory: '256Mi'
           cpu: '100m'
+  dnsExternalAlias:
+    - alias: apps.procosys.equinor.com
+      component: frontend
+      environment: prod
+      useCertificateAutomation: true
