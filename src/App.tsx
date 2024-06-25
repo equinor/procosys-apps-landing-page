@@ -1,8 +1,5 @@
-import React from 'react';
 import { Button, Typography } from '@equinor/eds-core-react';
 import styled from 'styled-components';
-import mcLogo from './mclogo.png';
-import commLogo from './commlogo2.png';
 
 const LandingPageWrapper = styled.main`
   width: 100vw;
@@ -23,27 +20,17 @@ const CommAppSection = styled(AppSection)`
   background-color: #FFECF0;
 `
 
-const LogoImage = styled.img`
-  width: 60px;
-  object-fit: contain;
-`
-
 function App() {
   return (
     <LandingPageWrapper>
-      <AppSection>
-        <LogoImage src={mcLogo}/> 
-        <Typography variant={'h4'}>Mechanical Completion</Typography>
-        <a href={'https://frontend-procosys-mc-webapp-prod.radix.equinor.com'}>
-          <Button color={'danger'}>Go to app</Button>
-        </a>
-      </AppSection>
       <CommAppSection>
-        <LogoImage src={commLogo}/> 
-        <Typography variant={'h4'}>Commissioning</Typography>
-        <a href={'https://frontend-procosys-commissioning-webapp-prod.radix.equinor.com'}>
-          <Button color={'danger'}>Go to app</Button>
+        <div style={{display: "flex", textAlign: "center", flexDirection: "column", alignItems: "center", padding: 36, backgroundColor: "white", borderRadius: "10px"}}>
+        <Typography variant={'h4'}>This domain has been retired, click on the button below to be redirected to the new page</Typography>
+        <Typography variant={'h4'}>If you have this page as a favorite, please change it to the new URL</Typography>
+        <a href={'https://apps.procosys.equinor.com'}>
+          <Button color={'danger'}>Go to apps.procosys.equinor.com</Button>
         </a>
+        </div>
       </CommAppSection>
     </LandingPageWrapper>
   );
